@@ -2,28 +2,27 @@
 #include<iomanip>
 using namespace std;
 int main() {
-    cout << "ÊäÈëÒ»ÐÐ×Ö·û£¬Í³¼Æ¸÷ÖÖ×Ö·ûµÄ¸öÊý";
-    int eng = 0, gm = 0, num = 0, oth = 0;
-    char wo;
-    cin >> wo;
-    while (cin.get(wo) && wo != '\n') {
-        if ((wo >= 'a' && wo <= 'z') || (wo >= 'A' && wo <= 'Z')) {
-            eng++;
-        }
-        else if (c >= '0' && c <= '9') {
-            num++;
-        }
-        else if (c == ' ') {
-            gm++;
-        }
-        else {
-            oth++;
-        }
-    }
-    cout << "×ÖÄ¸¸öÊý" << eng << endl;
-    cout << "Êý×Ö¸öÊý" << num << endl;
-    cout << "¿Õ¸ñ¸öÊý" << gm << endl;
-    cout << "ÆäËû¸öÊý" << oth << endl;
-    ///////////////////////////////////////////////5t
-    return 0;
+	cout << "è¾“å…¥ä¸€è¡Œå­—ç¬¦ï¼Œç»Ÿè®¡å„ç§å­—ç¬¦çš„ä¸ªæ•°";
+	char wo;
+	int eng = 0, gm = 0, num = 0, oth = 0;
+	while ((wo=cin.get())!= '\n') {
+		if ((wo >= 'a' && wo <= 'z') || (wo >= 'A' && wo <= 'Z')) {
+			eng++;
+		}
+		else if (wo >= '0' && wo <= '9') {
+			num++;
+		}
+		else if (wo == ' ') {
+			gm++;
+		}
+		else {
+			oth++;
+		}
+	}
+	cout << "å­—æ¯ä¸ªæ•°" << eng << endl;
+	cout << "æ•°å­—ä¸ªæ•°" << num << endl;
+	cout << "ç©ºæ ¼ä¸ªæ•°" << gm << endl;
+	cout << "å…¶ä»–ä¸ªæ•°" << oth << endl;
+	///////////////////////////////////////////////5t
+	return 0;
 }
